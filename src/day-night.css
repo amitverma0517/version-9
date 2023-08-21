@@ -1,0 +1,14 @@
+
+.move .footer,.move .social-links{
+    background-color: var(--bars-light);
+    color:var(--light);
+}
+.move .navbar{
+    background:var(--bars-light);
+    color:var(--light);
+    border-radius: 0 0 0 40px;
+}
+.move {
+    background-color: var(--day-background);
+    color:var(--dark);
+}

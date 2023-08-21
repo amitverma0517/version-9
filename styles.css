@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+:root {
+    --body-background: #000;
+    --day-background:#f0f2f5; 
+    --circles:rgba(255, 255, 255, 0.2);
+    --circle-light:rgba(60, 160, 190, 0.4);
+    --bars:#f0f2f5;
+    --bars-light:#1f1f1f;
+    --dark:#000;
+    --light:#fff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    color:var(--light);
+}
+
+
+.navbar{
+    background:var(--bars);
+    color:var(--dark);
+    border-radius: 0 0 0 40px;
+}
+.navbar-header .icon-bar{
+    background-color: red;
+    color:red;
+}
+/*.navbar-fixed-top{
+    position:relative;
+}*/
+.et_pb_text_inner{
+    position:relative;
+    padding-top:80px;
+
+}
+footer{
+    height:fit-content;
+    width:100%;
+    border-radius: 0 40px 0 0;
+    background:var(--bars);
+    text-align: center;
+    color:var(--dark);
+}
+.social-links{
+    position:fixed;
+    text-align: center;
+    background:var(--bars);
+    color:var(--dark);
+    height:fit-content;
+    left:0;
+    bottom:0;
+    width:100%;
+}

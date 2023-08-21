@@ -1,0 +1,73 @@
+.sun-moon {
+    position:relative;
+    width: 100px;
+    height: 56px;
+    padding: 5px;
+    border-radius: 45px;
+    border: 3px solid var(--dark); 
+    background-color: var(--light);
+    overflow: hidden; 
+    transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);     
+}
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.small {
+    width: 30px;
+    height: 30px;
+    background: var(--light);
+    left: 20px;
+    top: 3px;
+    transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.large {
+    width: 40px;
+    height: 40px;
+    background: var(--dark);
+    border: 3px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.sun-moon input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+/* Change the background color*/
+.move {
+    background-color:var(--day-background);
+    border-color: #f3909a;
+    color:black;
+}
+.move .sun-moon{
+    border: 3px solid var(--light);
+    background-color: var(--dark);
+}
+
+/*Move the bigger circle */
+.move .large {
+    left: 50px;
+    background: var(--light);
+    border-color: var(--dark);
+}
+
+/*Move the smaller circle */
+.move .small {
+    left: 60px;
+    top: 50px;
+    background-color: #fff;
+}
