@@ -1,11 +1,16 @@
-
+/*code for the background animation */
 .area{
     background: #4e54c8;  
     background:var(--body-background);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     /*background: -webkit-linear-gradient(to left, #8f94fb, blue 0px);
     /*background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);*/  
     width: 100%;
-    height:100vh;  
+    height:100vh; 
+    z-index:-10;  
 }
 
 .circles{
@@ -13,12 +18,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 10%; /* Set to 10% to make the hover effect work across ssite. original value: 100%*/
     overflow: hidden;
 }
 
 .circles li{
-    position: absolute;
+    position: fixed; /*original value: absolute, but to make the hover effect work it is set to fixed*/
     display: block;
     list-style: none;
     width: 20px;

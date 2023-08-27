@@ -1,14 +1,18 @@
 
 .move .footer,.move .social-links{
-    background-color: var(--bars-light);
-    color:var(--light);
+    background-color: var(--circle-light-2);
+    color:var(--dark);
 }
-.move .navbar{
-    background:var(--bars-light);
-    color:var(--light);
+.move .navbar{ 
+    background:var(--circle-light-2);
+    color:var(--dark);
     border-radius: 0 0 0 40px;
 }
 .move {
     background-color: var(--day-background);
     color:var(--dark);
+}
+.move .auto-grid li {
+    background: var(--circle-light);
+    color: var(--dark);
 }
